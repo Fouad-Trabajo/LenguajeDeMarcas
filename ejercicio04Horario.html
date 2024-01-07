@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <head>
+        <title>Ejercicio 04 Horario</title>
+        <!--Lo que hay dentro de style es Css-->
+        <style>
+            td,
+            th {
+                border: 1px solid black;
+                text-align: center;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            a {
+                background-color: aqua;
+            }
+        </style>
+
+    </head>
+
+
+
+    <table>
+        <colgroup>
+            <td span="2" style="background-color: burlywood">
+                <col span=5 style="background-color: brown">
+        </colgroup>
+        <caption>HORARIO 1º Grado Superior Desarrollo de aplicaciones multiplataforma</caption>
+        <thead>
+            <tr>
+                <th>HORA</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: red;">15:15 16:05</td>
+                <td style="background-color: green;" rowspan="2">Programación</td>
+                <td style="background-color: blue;" rowspan="2">Sistemas informáticos</td>
+                <td style="background-color: yellow;" rowspan="2">Lenguaje de Marcas</td>
+                <td style="background-color: blueviolet" rowspan="2">Entornos de desarrollo</td>
+                <td style="background-color: purple;" rowspan="2">Bases de datos</td>
+            </tr>
+            <tr>
+                <td style="background-color: red;">16:10 17:00</td>
+            </tr>
+            <tr>
+                <td style="background-color: red;">17:05 17:55</th>
+                <td style="background-color: blueviolet;">Entornos de desarrollo</td>
+                <td style="background-color: cyan" rowspan="1">FOL</td>
+                <td style="background-color: green" rowspan="1">Programación</td>
+                <td style="background-color: purple;" rowspan="1">Bases de datos</td>
+                <td style="background-color: blue;" rowspan="1">Sistemas informáticos</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: red;">17:55 18:05</td>
+                <td style="background-color: gray;" colspan="5">RECREO</td>
+
+            </tr>
+            <tr>
+                <td style="background-color: red;">18:05 18:55</td>
+                <td style="background-color: cyan;" colspan="2">FOL</td>
+                <td style="background-color: green;">Programación</td>
+                <td style="background-color: purple;">Bases de datos</td>
+                <td style="background-color: blue;">Sistemas informáticos</td>
+            </tr>
+            <tr>
+                <td style="background-color: red;">19:00 19:50</td>
+                <td style="background-color: purple;" rowspan="2">Bases de datos</td>
+                <td style="background-color: green" rowspan="2">Programación</td>
+                <td style="background-color: blue;" rowspan="2">Sistemas informáticos</td>
+                <td style="background-color: green;" rowspan="2">Programación</td>
+                <td style="background-color: yellow;" rowspan="2">Lenguaje de Marcas</td>
+            </tr>
+            <tr>
+                <td style="background-color: red;">19:55 20:45</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

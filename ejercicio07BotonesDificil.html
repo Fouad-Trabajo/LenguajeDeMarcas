@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h2 {
+            text-align: center
+        }
+
+        legend {
+            border: 1.4px solid black;
+            background-color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h2>
+        HOJA DE INSCRIPCIÓN<br>
+        EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR
+    </h2>
+
+    <form action="" method="get">
+        <fieldset style="background-color: rgb(158, 165, 165)">
+            <!-- Espero haber acertado con el color de los-->
+            <legend>Datos Personales</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="fotocopia">Nombre</label><br>
+                            <input type="text" name="nombre" placeholder="" required />
+                        </td>
+
+                        <td>
+                            <label for="fotocopia">Nombre</label><br>
+                            <input type="text" name="nombre" placeholder="" required />
+                        </td>
+                        <td>
+                            <label for="fotocopia">DNI</label><br>
+                            <input type="text" name="dni" placeholder="" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="fotocopia">Localidad de Nacimiento</label><br>
+                            <input type="text" name="localidad nacimiento" placeholder="" required />
+                        </td>
+
+                        <td>
+                            <label for="fotocopia">Fotocopia</label><br>
+                            <select provincia="provincia">
+                                <option>Huelva</option>
+                                <option>Sevilla</option>
+                                <option>Cádiz</option>
+                                <option>Córdoba</option>
+                                <option>Jaén</option>
+                                <option>Granada </option>
+                                <option>Málaga</option>
+                                <option>Almería</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="fotocopia">Fecha de nacimiento</label><br>
+                            <input type="date" name="fecha nacimiendo" placeholder="" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Dirección<br>
+                            <input type="text" name="direccion" placeholder="" required size="40" />
+                        </td>
+
+
+                        <td>
+                            Código postal<br>
+                            <input type="text" name="codigo postal" placeholder="" required />
+                        <td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset style="background-color: rgb(237, 205, 147)">
+            <legend>Forma de Acceso</legend>
+            <dl>
+                <dt>
+                    <input type="radio" name="directo">
+                    <label for="directo">Directo</label>
+                </dt>
+                <dd>
+                    <input type="radio" name="bechillerato">
+                    <label for="bachillerato">Bechillerato Log Modalidad</label>
+                    <input type="text" name="bachillerato" placeholder="" required /><br>
+                    <input type="radio" name="experimental">
+                    <label for="bachillerato">Experimental</label><br>
+                    <input type="radio" name="cou opcion">
+                    <label for="cou opcion">COU Opción</label>
+                    <input type="text" name="cou opcion" placeholder="" required /><br>
+                    <input type="radio" name="fp2">
+                    <label for="fp2">FP2</label><br>
+                    <input type="radio" name="otros">
+                    <label for="otros">Otros (especifique)</label>
+                    <input type="text" name="otros" placeholder="" required />
+                </dd>
+                <dt>
+                    <input type="radio" name="prueba libre">
+                    <label for="prueba libre">Prueba Libre</label>
+                </dt>
+
+            </dl>
+        </fieldset>
+
+        <fieldset style="background-color: rgb(161, 94, 94)">
+            <legend>Documentos Adjuntados</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="fotocopia dni">
+                            <label for="fotocopia">Fotocopia DNI</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="certificado academico">
+                            <label for="certificado academico;">Certificado Académico</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="otros">
+                            <label for="Otros;">Otros documentos (especifique)</label>
+                            <input type="text" name="otros documentos" placeholder="" required>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <p>
+            <label for="Enviar"></label>
+            <input type="submit" value="Enviar Solicitud">
+        </p>
+    </form>
+
+    <!--PARA PONER UN VIDEO EN EL CÓDIGO, UTILIZA IFRAME-->
+
+</html>
