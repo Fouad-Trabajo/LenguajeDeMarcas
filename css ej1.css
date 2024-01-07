@@ -1,0 +1,13 @@
+h1{
+    border-bottom: solid 2px blue;
+}
+h2{
+    border: solid 2px gray;
+}
+.datos{
+    border-top: dotted 4px red;
+    border-bottom: dotted 4px red;
+}
+.contenido{
+    border: dashed 2px #0F0;
+}

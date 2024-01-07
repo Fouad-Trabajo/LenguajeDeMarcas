@@ -1,0 +1,23 @@
+table,
+td {
+    border: solid 1px black;
+    font-size: 20px;
+}
+td{
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#lista {
+    text-align: left;
+}
+
+td:hover {
+    background-color: aqua;
+    font-style: italic;
+    color: red;
+}

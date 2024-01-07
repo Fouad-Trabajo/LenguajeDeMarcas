@@ -1,0 +1,23 @@
+*{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1{
+    border: solid 2px blue;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2{
+    border: solid 2px gray;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul{
+    border: solid 2px #0F0; 
+}
+li+li{
+    padding-top: 15px;
+}
