@@ -9,5 +9,5 @@ link{
     color: red;
 }
 p:first-child{
-    content: "*";
+    content: "* hola como estás";
 }
