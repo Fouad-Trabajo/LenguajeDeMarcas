@@ -1,0 +1,60 @@
+/*Punto 1*/
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+/*Punto 2*/
+a:hover {
+    color: green;
+}
+
+/*Punto 3*/
+a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*Punto 4*/
+ul li:first-child {
+    background-color: gray;
+}
+
+/*Punto 5*/
+ul:first-of-type li:last-child {
+    background-color: blue;
+    color: white;
+}
+
+/*El punto 6 se puede hacer de estas 2 formas posibles*/
+/* Forma 1*/
+ul~ul {
+    border: solid black 1px;
+}
+
+/*Forma 2*/
+ul:last-of-type {
+    border: solid 1px black;
+}
+
+/*Punto 7*/
+ul:last-of-type li:nth-child(2) {
+    color: orange;
+}
+
+/*Punto 8*/
+p::first-letter {
+    color: red;
+    font-size: 2em;
+}
+
+/*Punto 9*/
+p::first-line {
+    font-size: 1.2em;
+    color: rgb(111, 111, 207);
+}
+
+p::after {
+    content: "FIN";
+    border: solid 1px green;
+}

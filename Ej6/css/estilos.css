@@ -1,0 +1,13 @@
+table,tr,th,td{
+    border-collapse: collapse;
+    border: solid black 1px;
+}
+thead::first-letter{
+    color:red;
+}
+link{
+    color: red;
+}
+p:first-child{
+    content: "*";
+}
