@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+    border: solid 1px black;
+    width: 80%;
+    margin:0;
+  
+
+}
+
+h1,
+.image {
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+}

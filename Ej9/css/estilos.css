@@ -1,0 +1,27 @@
+html{
+    width: 80%;
+    border: solid black 1px;
+}
+.bloques{
+    border: solid 1px black;
+    text-align: center;
+    width: 50%;
+}
+.main{
+    background-color: blue;
+    height: 200px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.bloques{
+    background-color: red;
+    height: 400px;
+    margin: 40 0;
+    text-align: center;
+    width: 60%;
+}
+div .bloques{
+    background-color: chartreuse;
+}

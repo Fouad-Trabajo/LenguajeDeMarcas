@@ -1,13 +1,50 @@
-table,tr,th,td{
+table {
     border-collapse: collapse;
-    border: solid black 1px;
+
 }
-thead::first-letter{
-    color:red;
+
+td,
+th {
+    border: 1px solid black;
 }
-link{
+
+
+tr td:first-child {
+    background-color: green;
+}
+
+[colspan="5"] {
+    background-color: yellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
     color: red;
 }
-p:first-child{
-    content: "* hola como estás";
+
+a:link {
+    color: green;
+}
+
+tr th :last-child:hover,
+tr td :last-child:hover {
+    font-size: 2em;
+}
+
+thead tr th ::first-letter {
+    font-size: 2em;
+}
+
+/* [required="required"]*/
+input:required {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+label::after {
+    content: "*";
+    color: red;
 }
