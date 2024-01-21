@@ -1,27 +1,32 @@
-html{
+html {
     width: 80%;
-    border: solid black 1px;
+    border: solid black 1px; /* Borde de la página html*/
+    box-sizing: border-box;
+    margin: 0 auto;
 }
-.bloques{
-    border: solid 1px black;
-    text-align: center;
-    width: 50%;
-}
-.main{
+
+.main {
     background-color: blue;
     height: 200px;
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    width: 80%;
+    margin: 20px auto;
 }
-.bloques{
+
+.bloques {
     background-color: red;
     height: 400px;
-    margin: 40 0;
-    text-align: center;
-    width: 60%;
+    margin: 40px auto;
+    /*text-align: center;*/
+
 }
-div .bloques{
+
+.bloques div {
     background-color: chartreuse;
+    border: solid black 1px;
+    height:200px;
+    width: 25%;
+    margin-top:100px;
+    margin: 100px auto;
+    display: inline-block; /*Los contenedores se comportan como línea y son afectados por el text-align*/
+    /*Para poder utilizar el margin de un elemento, debo darle un valor de ancho y alto*/
 }

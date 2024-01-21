@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vpadding {
+    border: solid black 1px;
+    padding: 50px;
+    text-align: center;
+}
+
+.vdisplay {
+    border: solid black 1px;
+    display: table; /*La clase, se comporta como una tabla*/
+    height: 300px;
+    margin: 30px auto;
+    width: 60%;
+}
+
+.vdisplay p {
+    display: table-cell; /* Se comportan como celdas*/
+    margin:20px;
+    padding: 20px;
+    vertical-align: middle;
+    /*Esto se aplicaría a un celda, pero como en este caso 
+    lo hemos declarado como celda, entonces se puede poner*/
+}

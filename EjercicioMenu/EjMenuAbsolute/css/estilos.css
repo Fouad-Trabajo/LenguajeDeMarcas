@@ -1,0 +1,95 @@
+body {
+    height: 2500px;
+    background-color: beige;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    /*Este es el div del menu*/
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    background-color: grey;
+    position: absolute;
+    left:0;
+    top:60px;
+    /*Se posiciona en relación con el primer ancestro que tenga `position: relative`.
+    Se comporta como `fixed`, pero en lugar de estar fijo respecto a la ventana del
+    navegador, está fijo respecto a su contenedor padre con `position: relative`
+    Si no se encuentra tal antecesor, se posiciona en relación al contenedor principal que es el HTMl
+    El menú está fijo no a la ventana sino, al padre en cuestion,
+    por lo que al estar fijo con el html, al hacer scroll se mueve porque el padre también se mueve, 
+    si el ancestro no se mueve, el hijo (abosolute) tampoco se movería*/
+}
+
+div {
+    /*Eslo lo aplica a todos los divs*/
+    text-align: justify;
+    width: 95%;
+    display: inline-block;
+    margin: auto 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+
+}
+
+img {
+    /*Se aplica a las 4 imagenes*/
+    float: left;
+    margin-right: 20px;
+    height: 200px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+td,
+tr {
+    border: solid black 1px;
+    padding: 10px;
+}
+
+/*Pseudo-selectores*/
+td:hover {
+    background-color: aquamarine;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+h2:hover {
+    font-size: 30px;
+}
+
+a:active {
+    color: red;
+}
+
+p::selection {
+    /*Cada vez que selecciono un texto, se pone el fondo del texto en rojo y la letra blanca*/
+    background-color: red;
+    color: blue;
+}
+
+a:hover {
+    font-size: 25px;
+}

@@ -1,0 +1,86 @@
+body {
+    height: 2500px;
+    background-color: beige;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    /*Este es el div del menu*/
+    width: 100%;
+    text-align: left;
+    background-color: grey;
+    position: static;
+    /*El static no le afectan las propiedades de top, rigth, bottom, left o z-index por eso no pongo nada*/
+}
+
+div {
+    /*Eslo lo aplica a todos los divs*/
+    text-align: justify;
+    width: 95%;
+    display: inline-block;
+    margin: auto 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+
+}
+
+img {
+    /*Se aplica a las 4 imagenes*/
+    float: left;
+    margin-right: 20px;
+    height: 200px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+td,
+tr {
+    border: solid black 1px;
+    padding: 10px;
+}
+
+/*Pseudo-selectores*/
+td:hover {
+    background-color: aquamarine;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+h2:hover {
+    font-size: 30px;
+}
+
+a:active {
+    color: red;
+}
+
+p::selection {
+    /*Cada vez que selecciono un texto, se pone el fondo del texto en rojo y la letra blanca*/
+    background-color: red;
+    color: blue;
+}
+
+a:hover {
+    font-size: 25px;
+}
