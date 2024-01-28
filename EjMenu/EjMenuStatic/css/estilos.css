@@ -75,7 +75,7 @@ a:active {
     color: red;
 }
 
-p::selection {
+b::selection,i::selection,p::selection {
     /*Cada vez que selecciono un texto, se pone el fondo del texto en rojo y la letra blanca*/
     background-color: red;
     color: blue;

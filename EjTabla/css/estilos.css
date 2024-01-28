@@ -1,26 +1,35 @@
-h1:hover{
-color: greenyellow;
-}
-table,
-td {
-    border: solid 1px black;
-    font-size: 20px;
-}
-td{
-    padding: 10px;
-}
+    div {
+        /* Al poner esto, el tamaño del div adquiere el tamaño 
+            que tienen los elementos que lo componen*/
+        display: inline-block;
+        text-align: center;
+    }
 
-table {
-    border-collapse: collapse;
-    text-align: center;
-}
+    h1:hover {
+        color: red;
+    }
 
-#lista {
-    text-align: left;
-}
+    table,
+    td {
+        border: solid 1px black;
+        font-size: 20px;
+    }
 
-td:hover {
-    background-color: aqua;
-    font-style: italic;
-    color: red;
-}
+    td {
+        padding: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    #lista {
+        text-align: left;
+    }
+
+    td:hover {
+        background-color: aqua;
+        font-style: italic;
+        color: red;
+    }

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+nav div {
+    display: inline-block;
+    padding: 10px;
+    width: 15%;
+}
+
+
+.sidebar {
+    background-color: black;
+    color: white;
+    float: left;
+    height: 500px;
+    margin-top: 30px;
+    width: 15%;
+}
+
+.sidebar div {
+    padding: 10px;
+}
+
+section {
+    float: left;
+    margin-left: 5%;
+    width: 80%;
+}
+
+.course {
+    border: solid black 1px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    float: left;
+    padding: 10px;
+    margin-top: 30px;
+    width: 33%;
+    text-align: center;
+}
+
+.course img {
+    width: 50%;
+}
+
+.articles {
+    columns: 3;
+    float: left;
+    margin-left: 5%;
+    /*Estos 2 margenes se puede poner en 1 sola línea*/
+    margin-top: 30px;
+    width: 80%; /* Esto no se hacerlo*/  
+}
+
+footer {
+    background-color: gray;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.cb {
+    clear: both;
+}

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: grey;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    /*
+    display: inline-block;
+    /* Esto lo que hace es que el contenedor padre 
+        adquiera el tamaño de los elementos que le contienen*/
+
+}
+
+.sidebar {
+    background-color: yellow;
+    float: left;
+    /* Rompe el flujo del html*/
+    height: 600px;
+    width: 25%;
+}
+
+
+.article {
+    background-color: red;
+    float: left;
+    height: 300px;
+    width: 20%;
+    margin-left: 5%;
+}
+
+footer {
+    background-color: blue;
+    float: left;
+    height: 290px;
+    margin-left: 5%;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.article:hover {
+    transition: 1s;
+    border-radius: 50%;
+}
+.cb{
+    clear: both; /*Esto es para decirle que deje de flotar*/
+}
+
+/*
+Cuando un contenedor con n elementos flotantes, el contenedor podría no 
+expandirse adecuadamente para rodear a esos elementos, lo que podría 
+resultar en problemas de diseño y superposición de contenido
+
+*/

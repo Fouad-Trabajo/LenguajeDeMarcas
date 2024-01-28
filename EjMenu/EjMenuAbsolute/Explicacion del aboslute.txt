@@ -1,0 +1,8 @@
+El absolute se pone en función del relative padre que tiene. 
+Es decir, si el div relative está en la esquina superior derecha de la ventana
+(ojo no del html), pues un parrafo que se encuentre en ese div si tu le dices que 
+de se centre en el centro con el top, left, bottom, right. Pues se centro en el medio del
+div del padre relative
+
+Si no hay padre relative, el absolute busca otro position para ser su hijo, pero 
+si no encuentra ninguno, coje como padre la ventana del navegador y se comporta como un relative
