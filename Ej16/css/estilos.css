@@ -1,23 +1,31 @@
 body{
     background-image:  url(../img/Fondo.jpg);
     background-repeat:repeat-x;
+    background-position: left;
+    background-size: cover;
+    margin: 0;
+    border: solid black 1px;
 }
+
 #container{
     width: 80%;
-    margin: 0 auto; /*Centrado horizontal*/
-
+    margin: auto;
+    background-color: white;
+    border: solid black 1px;
 }
 
 /*CABEZERA*/
 header{
     background-image: url(../img/cabecera.jpg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     position: relative;
     height: 170px;    
+    box-shadow: 0 3.5px 0 0 #cccccc;
 }
 header {
     text-align: right; 
     position:relative;
+    margin: 0 1px;
 }
 header #social{
     text-align: left; /*Sobreescribo la posición del contenido*/
@@ -26,12 +34,8 @@ header #social{
     bottom: 0;
 }
 header #social a{
-    padding-bottom: 0;
-    padding-left: 10px;
+    display: inline-block;
 }
-
-
-
 
 
 /*MENÚ*/
@@ -41,8 +45,9 @@ header #social a{
     width: 25%;
     background-image: url(../img/Menu-Off-.jpg);
     color: white;
-    margin-top: 5px;
+    margin-top: 4px;
     font-weight: bold;
+    float: left;
 }
 
 #centro nav ul li:hover { /* Hover para las líneas del menú*/
@@ -71,8 +76,48 @@ header #social a{
 }
 
 /*CONTENIDO*/
+/*PARTE CENTRAL*/
+#noticias #noticiasarriba .noticiaarriba{
+    display: inline-block;
+    border:solid black 1px;
+}
+#noticias #noticiasabajo .noticiaabajo{
+    display: inline-block;
+    border:solid black 1px;
+}
 
 
+
+
+
+
+/*PARTE DERECHA*/
+#derecha #clasificaciones{
+    display: flex;
+}
+#derecha #clasificaciones nav{
+    border: solid black 1px;
+    margin-left: auto;
+    margin-top: 0;
+ 
+}
+#derecha #clasificaciones nav ol{
+    border: solid black 1px;
+    width: 20%;
+}
+#derecha #clasificaciones nav ol li{
+    border: solid black 1px;
+}
+#derecha #clasificaciones nav ol li table tr td:last-child{
+    border: solid black 1px;
+    position: relative;
+}
+#derecha #clasificaciones nav ol li table tr td:first-child{
+    border: solid black 1px;
+}
+#derecha #clasificaciones nav ol li table{
+    border: solid black 1px;
+}
 
 
 
@@ -80,6 +125,7 @@ header #social a{
 footer{
     background-color: #555;
     text-align: center;
+    margin: 0 1px;
 }
 
 footer img{
