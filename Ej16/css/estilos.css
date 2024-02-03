@@ -5,11 +5,32 @@ body{
 #container{
     width: 80%;
     margin: 0 auto; /*Centrado horizontal*/
+
 }
+
 /*CABEZERA*/
 header{
     background-image: url(../img/cabecera.jpg);
+    background-repeat: repeat-x;
+    position: relative;
+    height: 170px;    
 }
+header {
+    text-align: right; 
+    position:relative;
+}
+header #social{
+    text-align: left; /*Sobreescribo la posición del contenido*/
+    position: absolute;
+    padding-left: 115px;
+    bottom: 0;
+}
+header #social a{
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+
+
 
 
 
@@ -17,26 +38,38 @@ header{
 #centro nav ul{ /* Toda el menú*/
     list-style: none; /*Esto es para quitar los iconos de lista*/
     padding-left: 0;
-    width: 100%;
+    width: 25%;
     background-image: url(../img/Menu-Off-.jpg);
     color: white;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
-#centro nav ul li ul{ /* El subMenú*/
-    background-color: #E9E9E9;
-    display: none; /*Esconder el submenú*/
-}
-
-#centro nav ul:hover{ /* Hover para el menú*/
+#centro nav ul li:hover { /* Hover para las líneas del menú*/
     color:#FFFFE1;
     background-image: url(../img/MenuSeleccionado.jpg);
 }
-#centro nav ul li:hover ul{ /*Hover para el subMenú*/
-    color: #F0F0F0;
-    background-color: #000;
-    display:block; /*El submenú aparece cuando el ratón pasa por encima*/
+
+#centro nav ul li ul { /* El subMenú*/
+    display: none; /*Esconder el submenú*/
+    width: 100%;
+}
+
+#centro nav ul li:hover ul{ /*Hover para que aparezca el subMenú*/
+    display:block; 
     z-index: 1;
 }
+
+#centro nav ul li ul li{ /*Cada línea del subMenú*/
+    background-color: #E9E9E9;
+    color:black;
+}
+
+#centro nav ul li ul li:hover{ /*Hover para las líneas del subMenú*/
+    background-color: #000;
+    color: #F0F0F0;
+}
+
 /*CONTENIDO*/
 
 
@@ -48,6 +81,7 @@ footer{
     background-color: #555;
     text-align: center;
 }
+
 footer img{
     background-image: url(../img/Menu-Off-.jpg);
 }
