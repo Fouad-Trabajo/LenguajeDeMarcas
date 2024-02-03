@@ -1,0 +1,53 @@
+body{
+    background-image:  url(../img/Fondo.jpg);
+    background-repeat:repeat-x;
+}
+#container{
+    width: 80%;
+    margin: 0 auto; /*Centrado horizontal*/
+}
+/*CABEZERA*/
+header{
+    background-image: url(../img/cabecera.jpg);
+}
+
+
+
+/*MENÚ*/
+#centro nav ul{ /* Toda el menú*/
+    list-style: none; /*Esto es para quitar los iconos de lista*/
+    padding-left: 0;
+    width: 100%;
+    background-image: url(../img/Menu-Off-.jpg);
+    color: white;
+}
+
+#centro nav ul li ul{ /* El subMenú*/
+    background-color: #E9E9E9;
+    display: none; /*Esconder el submenú*/
+}
+
+#centro nav ul:hover{ /* Hover para el menú*/
+    color:#FFFFE1;
+    background-image: url(../img/MenuSeleccionado.jpg);
+}
+#centro nav ul li:hover ul{ /*Hover para el subMenú*/
+    color: #F0F0F0;
+    background-color: #000;
+    display:block; /*El submenú aparece cuando el ratón pasa por encima*/
+    z-index: 1;
+}
+/*CONTENIDO*/
+
+
+
+
+
+/*FOOTER*/
+footer{
+    background-color: #555;
+    text-align: center;
+}
+footer img{
+    background-image: url(../img/Menu-Off-.jpg);
+}

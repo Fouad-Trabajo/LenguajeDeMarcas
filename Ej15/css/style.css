@@ -109,14 +109,12 @@ body {
 }
 
 
-.header-menu nav ul li ul {
-    background-color: rebeccapurple;
+.header-menu nav ul li ul { 
     display: none;
     /*Esto es para que el submenú desaparezca*/
     position: absolute;
     padding-top: 15px;
     background-color: var(--text-color);
-
 }
 
 .header-menu nav ul li ul li {
@@ -130,53 +128,78 @@ body {
     /*Se muestra cuando se pasa el ratón por un li que tenga un ul dentro de el, 
         en este caso el segundo li es el único que tiene un ul dentro de el*/
     display: block;
+    z-index:1;
 }
 
-.foto-busta{
+.foto-busta {
     position: relative;
 }
-[src="img/coviran-bustamante.png"]{
+
+[src="img/coviran-bustamante.png"] {
     width: 100%;
 }
-[src="img/fanta2.png"]{
+
+[src="img/fanta2.png"] {
     position: absolute;
     left: 500px;
     transition: left 3s;
 }
-[src="img/fanta2.png"]:hover{
+
+[src="img/fanta2.png"]:hover {
     left: 0;
 }
-.noticias{
-    padding:10px;
+
+.noticias {
+    padding: 10px;
 }
-.noticias .noticia{
+
+.noticia {
     width: 32%;
     margin: 5px;
     box-shadow: 0 0 10px var(--bg-color-container);
     height: 360px;
     font-size: 1rem;
+    float: left;
 }
 
-/*La seccion de noticias no está acabada*/
-/*Empiezon con el footer*/
-.footer-arriba{
-    color: var(--footer-bg-menu-color);
+.noticia img {
+    width: 100%;
 }
-.footer-arriba__menu-item{
+
+.noticia p {
+    padding: 10px;
+    text-align: center;
+}
+
+.noticia:hover {
+    opacity: 0.5;
+}
+
+.footer-arriba {
+    background-color: var(--footer-bg-menu-color);
+}
+
+.footer-arriba__menu-item {
     width: 25%;
     float: left;
     padding: 0 20px;
-    border-bottom: 1px solid var(--text-color);
-    padding: 10px 20px;
-    
-}
-.footer-arriba__menu-item p a{
-    text-decoration: none;
-    /*color: var(--text-color)*/ /*Esto hace que desaparezcan porque tienen el mismo color que el fondo*/
-}
-.footer-abajo{
-    background-color: var(--bg-color);
-    padding: 10px 30px;
-    color:var(--text-color);
 }
 
+.footer-arriba__menu-item p a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.footer-arriba__menu-item p{
+    border-bottom: 1px solid var(--text-color);
+    padding: 10px 20px;
+}
+
+.footer-abajo {
+    background-color: var(--bg-color);
+    padding: 10px 30px;
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+.footer-abajo__imagenes{
+    text-align: center;
+}
