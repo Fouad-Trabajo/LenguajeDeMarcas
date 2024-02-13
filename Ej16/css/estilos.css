@@ -1,10 +1,10 @@
 body{
     background-image:  url(../img/Fondo.jpg);
-    background-repeat:repeat-x;
-    background-position: left;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    border: solid black 1px;
 }
 
 #container{
@@ -20,7 +20,7 @@ header{
     background-repeat: no-repeat;
     position: relative;
     height: 170px;    
-    box-shadow: 0 3.5px 0 0 #cccccc;
+    box-shadow: 0 3.5px 0 0 #cccccc; 
 }
 header {
     text-align: right; 
@@ -28,7 +28,7 @@ header {
     margin: 0 1px;
 }
 header #social{
-    text-align: left; /*Sobreescribo la posición del contenido*/
+    text-align: left; /**Sobreescribo la posición del contenido*/
     position: absolute;
     padding-left: 115px;
     bottom: 0;
@@ -38,45 +38,49 @@ header #social a{
 }
 
 
-/*MENÚ*/
-#centro nav ul{ /* Toda el menú*/
-    list-style: none; /*Esto es para quitar los iconos de lista*/
-    padding-left: 0;
-    width: 25%;
-    background-image: url(../img/Menu-Off-.jpg);
-    color: white;
+/**MENÚ*/
+#centro nav ul { /** Todo el menú*/
     margin-top: 4px;
     font-weight: bold;
-    float: left;
+    list-style: none; /**Esto es para quitar los iconos de lista*/
+    padding-left: 0;
+    width: 16%;
+    color: white;
+    /**float: left;*/
 }
-
-#centro nav ul li:hover { /* Hover para las líneas del menú*/
+#centro nav ul li{  /** Cada lista del menú*/
+    background-image: url(../img/Menu-Off-.jpg);
+}
+#centro nav ul li:hover { /** Hover para las listas del menú*/
     color:#FFFFE1;
     background-image: url(../img/MenuSeleccionado.jpg);
 }
 
-#centro nav ul li ul { /* El subMenú*/
-    display: none; /*Esconder el submenú*/
+#centro nav ul li ul{ /** El subMenú*/
+    display: none; /**Esconder el submenú*/
     width: 100%;
+    
+}
+#centro nav ul li ul li{
+    color: black;
+    background-image: none;
+    background-color: #E9E9E9;
 }
 
-#centro nav ul li:hover ul{ /*Hover para que aparezca el subMenú*/
-    display:block; 
+#centro nav ul li:hover ul{ /**Hover para que aparezca el subMenú*/
+    display:block;
     z-index: 1;
 }
 
-#centro nav ul li ul li{ /*Cada línea del subMenú*/
-    background-color: #E9E9E9;
-    color:black;
+
+#centro nav ul li ul li:hover{ /**Hover para cada línea del subMenú*/
+    background-image: none;
+    background-color:  #000;
+    color:#F0F0F0; 
 }
 
-#centro nav ul li ul li:hover{ /*Hover para las líneas del subMenú*/
-    background-color: #000;
-    color: #F0F0F0;
-}
-
-/*CONTENIDO*/
-/*PARTE CENTRAL*/
+/**CONTENIDO*/
+/**PARTE CENTRAL*/
 #noticias #noticiasarriba .noticiaarriba{
     display: inline-block;
     border:solid black 1px;
