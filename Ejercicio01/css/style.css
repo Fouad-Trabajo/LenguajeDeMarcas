@@ -1,0 +1,67 @@
+h2, .box{
+    text-align: center;
+    color: rgb(149, 136, 136);
+}
+.box{
+    border: solid red 6px;
+    align-items: center;
+    padding: 50px;
+    font-size: 2rem;
+    margin: 1px 1px;
+}
+.contenedor .d-flex{
+    display: flex;
+}
+.contenedor .d-flex-2{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor .d-flex-3{
+    display: flex;
+    justify-content: row;
+
+}
+.contenedor .d-flex-4{
+    display: flex;
+   
+    flex-direction: column;
+
+}
+.contenedor .d-flex-5{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+ 
+}
+.contenedor .d-flex-6{
+    display: flex;
+ 
+}
+.contenedor .d-flex-7{
+    display: flex;
+
+}
+.contenedor .d-flex-8{
+    display: flex;
+
+}
+.contenedor .d-flex-9{
+    display: flex;
+
+}
+.contenedor .d-flex-10{
+    display: flex;
+
+}
+.contenedor .d-flex-11{
+    display: flex;
+
+}
+.contenedor .d-flex-12{
+    display: flex;
+
+}
+.contenedor .d-flex-13{
+    display: flex;
+
+}
