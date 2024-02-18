@@ -1,67 +1,118 @@
-h2, .box{
+h2,
+.box {
     text-align: center;
     color: rgb(149, 136, 136);
 }
-.box{
+
+.box {
     border: solid red 6px;
     align-items: center;
     padding: 50px;
     font-size: 2rem;
     margin: 1px 1px;
 }
-.contenedor .d-flex{
+
+.contenedor .d-flex {
     display: flex;
 }
-.contenedor .d-flex-2{
+
+.contenedor .d-flex-2 {
     display: flex;
     flex-direction: row;
 }
-.contenedor .d-flex-3{
+
+.contenedor .d-flex-3 {
     display: flex;
-    justify-content: row;
+    flex-direction: row;
+    justify-content: flex-start;
 
 }
-.contenedor .d-flex-4{
+
+.contenedor .d-flex-4 {
     display: flex;
-   
     flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
 
 }
-.contenedor .d-flex-5{
+
+.contenedor .d-flex-5 {
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
- 
+    align-items: flex-start;
 }
-.contenedor .d-flex-6{
+
+.contenedor .d-flex-6 {
     display: flex;
- 
+    flex-direction: column;
+    align-items: center;
 }
-.contenedor .d-flex-7{
+
+.contenedor .d-flex-7 {
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.contenedor .d-flex-8 {
+    display: flex;
+    flex-direction: row;
+
 
 }
-.contenedor .d-flex-8{
+
+.contenedor .d-flex-8 .box {
+    flex-basis: auto;
+    /**Tiene prioridad sobre el heigth y whith. Pero no tiene prioridad sobre min y max-heigt y whitdh*/
+}
+
+.contenedor .d-flex-9 {
     display: flex;
+    /*! Este por ahora nos le saltamos*/
+}
+
+.contenedor .d-flex-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: nowrap;
 
 }
-.contenedor .d-flex-9{
-    display: flex;
 
-}
-.contenedor .d-flex-10{
+.contenedor .d-flex-11 {
     display: flex;
-
 }
-.contenedor .d-flex-11{
+
+.contenedor .d-flex-11 .box:first-child {
+    flex-grow: 2;
+}
+
+.contenedor .d-flex-11 .box {
+    flex-grow: 1;
+}
+
+.contenedor .d-flex-12 {
     display: flex;
-
 }
-.contenedor .d-flex-12{
-    display: flex;
 
+.contenedor .d-flex-12 .box {
+    width: 500px;
 }
-.contenedor .d-flex-13{
+
+.contenedor .d-flex-11 .box:first-child {
+    flex-shrink: 1;
+}
+
+.contenedor .d-flex-12 .box:nth-child(2) {
+    flex-shrink: 1;
+}
+
+.contenedor .d-flex-12 .box:nth-child(3) {
+    flex-shrink: 2;
+}
+
+.contenedor .d-flex-13 {
     display: flex;
 
 }

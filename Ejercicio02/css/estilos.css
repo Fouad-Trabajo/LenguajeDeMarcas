@@ -1,0 +1,55 @@
+.padre {
+  background-color: #001f3f;
+  padding: 3px;
+  font-size: 1em;
+  display: flex;
+  margin: 3px;
+  gap: 0.3em;
+}
+
+.hijo {
+  background-color: #0074d9;
+  padding: 20px;
+  color: white;
+}
+
+/**Padre 1*/
+/*!El primer padre no se modifica, lo dice el enunciado*/
+
+
+/**Padre 2*/
+.padre:nth-child(2) .hijo {
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+/**Padre 3*/
+.padre:nth-child(3) .hijo {
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.padre:nth-child(3) .hijo:first-child {
+  flex-grow: 2;
+}
+
+.padre:nth-child(3) .hijo:last-child {
+  flex-grow: 0;
+  order: -1;
+}
+
+/**Padre 4*/
+.padre:nth-child(4) {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.padre:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.padre:nth-child(4) .hijo:first-child {
+  margin-right: auto;
+}

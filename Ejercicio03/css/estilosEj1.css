@@ -1,0 +1,19 @@
+ul{
+   font-family: sans-serif;
+   flex-direction: row;
+   display: flex;
+   padding-left: 0;
+   margin-top: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+
+    list-style: none;
+    background-color: rgba(123,198,199,0.8);
+    padding: 10px;
+    margin-right: 2px;
+    flex-grow: 1;
+}
