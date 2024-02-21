@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 2px; /** Separación entre los hijos*/
+}
+.sidebar{
+    background-color: rgb(129, 243, 243);
+    padding: 12px 24px;
+    flex: 1;
+}
+.contenido{
+    background-color: rgb(173, 200, 173);
+    flex: 4;
+    padding: 12px 24px;
+}

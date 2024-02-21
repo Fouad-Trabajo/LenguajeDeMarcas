@@ -1,0 +1,18 @@
+ul{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+ }
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+    background-color: rgba(123,198,199,0.8);
+    margin-left: 1px;
+    flex: 1; /** flex-grow:1 flex-shrink: 1; flex-basis: 0; */  
+    height: 100px;
+}

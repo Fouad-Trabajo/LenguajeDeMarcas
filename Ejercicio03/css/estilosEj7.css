@@ -1,0 +1,26 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    border: solid black 1px;
+}
+.card .title{
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    align-items: center;
+    flex-grow: 1;
+}
+.card .cuerpo{
+flex-grow: 3;
+border: solid black 1px;
+}
+
+.card .pie{
+    background-color: gray;
+    color: white;
+    flex-grow: 1;
+    padding: 12px 24px;
+    align-items: 100%;
+}

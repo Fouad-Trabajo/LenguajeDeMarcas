@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    gap: 2px;
+}
+.sidebar{
+    flex-grow: 1;
+    background-color: rgba(123, 198, 199, 0.8);
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px;
+}
+
+.sidebar ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: solid gray 1px;
+    
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenido {
+    background-color: rgb(173, 200, 173);
+    padding: 12px 24px;
+    flex-grow: 8;
+
+}

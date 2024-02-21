@@ -1,0 +1,18 @@
+ul{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    gap:2px; /** Separación entre hijos*/
+ }
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+    padding: 8px 16px;
+    background-color: rgba(123,198,199,0.8);
+}

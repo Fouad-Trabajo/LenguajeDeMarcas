@@ -1,0 +1,10 @@
+.cuadro{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(193,219,210,1.00);
+    height: 300px;
+    width: 300px;
+}
