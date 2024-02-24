@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    color: white;
+    background-color: #a4c857;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+aside {
+    color: #1f489b;
+    background-color: #dfe5e8;
+    padding: 60px 0;
+}
+
+section:last-of-type article {
+    color: white;
+    background-color: #4896EC;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}

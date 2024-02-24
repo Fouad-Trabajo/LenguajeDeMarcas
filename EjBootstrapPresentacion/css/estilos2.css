@@ -1,0 +1,24 @@
+.container-fluid{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*! Estoy sobreescribiendo el estilo .container-fluid de bootstrap llamar a esta clase*/
+}
+
+
+ul li,
+ul li a {
+    list-style: none;
+    /**Quitar punteado */
+    text-decoration: none;
+    /**Quitar subrayado */
+    color: black;
+}
+
+div img {
+    width: 50px;
+}
+
+footer {
+    background-color: gray;
+}
