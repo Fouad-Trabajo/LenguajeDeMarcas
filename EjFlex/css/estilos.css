@@ -1,14 +1,22 @@
 .contenedor{
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
+    border: 2px solid red;
     align-items: flex-start;
-
-    height: 500px;
+    width: 300px;
 }
-.elemento{
+.elemento1, .elemento2,.elemento3{
     border: 1px solid black;
     padding: 10px;
     width: 100px;
-    
+}
+
+.elemento1{
+    flex-shrink: 1;
+}
+.elemento2{
+    flex-shrink: 3;
+}
+.elemento3{
+    flex-shrink: 2;
 }
