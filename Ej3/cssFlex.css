@@ -1,0 +1,20 @@
+body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: sans-serif;
+  justify-content: flex-start;
+  align-items: flex-start; /* No haría falta ponerlo, pero dice, que debe está alineado a la izquierda*/
+}
+
+ul li,
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+ul li {
+  background-color: rgb(141, 190, 212);
+  width: 80px;
+}

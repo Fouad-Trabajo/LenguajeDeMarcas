@@ -1,0 +1,119 @@
+/*
+Ayudas: 
+Color fondo de la cabecera: #3B5998;
+Fuente general: helvetica,arial;
+Color de los enlaces: #8FABC5;
+Botón entrar de la cabecera: 
+- Color del botón: #4267B2;
+- Color del borde del botón: #29487D;
+Color del text22: 
+- #0E385F
+A la imagen del fondo se le debe aplicar la siguiente propiedad:
+linear-gradient(to bottom,white,#D3D8E8 );
+Botón regístrate: 
+- Color del botón: #69a74e
+- Color del borde: #3b6e22;
+Color del text12: 
+- #444
+*/
+* {
+  font-family: helvetica, arial;
+}
+
+/* Header */
+header {
+  background-color: #3b5998;
+  height: 90px;
+}
+header #headerdentro #headerizq {
+  padding: 20px;
+  float: left;
+}
+header #headerdentro #headerder {
+  float: right;
+  margin-right: 50px;
+}
+header #headerdentro #headerder form table tr td a {
+  text-decoration: none;
+  color: #8fabc5;
+}
+td {
+  color: white;
+  padding-left: 10px;
+}
+header #headerdentro #headerder form table :nth-child(2) :nth-child(3) input {
+  border: solid #29487d 1px;
+  background-color: #4267b2;
+  color: white;
+}
+.cb {
+  /*Esto se pone a la hora de quitar las flotaciones*/
+  clear: both;
+}
+/*Contenido central*/
+#main #container {
+  display: flex;
+  flex-direction: row; /*Aunque no hace falta, porque es el por defecto*/
+  gap: 100px; /*Distancia entre los hijos*/
+  padding: 0 40px;
+}
+/*Contenido central izquierdo*/
+#main #container #contizq .text22 {
+  color: #0e385f;
+  font-weight: bold;
+}
+
+#main #container #contizq img {
+  /*linear-gradient (to bottom,white,#D3D8E8 ); */
+} /*Esto no ha funcionado*/
+/*Contenido centraol derecho*/
+#main #container #contder p #gratis {
+  font-weight: bolder;
+}
+#main #container #contder form input {
+  border-radius: 5px; /*Pongo que los border sean redondos*/
+  padding: 15px;
+  border: solid gray 1px;
+}
+#main #container #contder form p input:nth-last-of-type(1) {
+  width: 60%;
+}
+#main #container #contder form input:nth-of-type(3) {
+  width: 60%;
+}
+#main #container #contder form a {
+  color: #8fabc5; /*Color de los enlaces en*/
+  text-decoration: none;
+}
+#main #container #contder form p:nth-of-type(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+} /*Esta parte de los radios no me ha salido alineada correctamente*/
+
+#main #container #contder form p:nth-of-type(5) input {
+  /*Boton importante*/
+  background-color: #69a74e;
+  border: solid #3b6e22 1px;
+  width: 22%;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/*Footer*/
+footer nav ul,
+footer nav ul li a {
+  list-style: none;
+  color: #8fabc5;
+  text-decoration: none;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /*Me salen 3 líneas de enlaces, porque supongo que he puesto mucho gap*/
+  flex-wrap: wrap;
+}
+
+footer .text12 {
+  color: #444;
+}

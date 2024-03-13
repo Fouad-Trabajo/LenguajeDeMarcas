@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--En este código de bootstrap, el enlace a los estilos es local, y como no nos has pasado 
+	ningún archivo de estilos de boostrap, he implementado boostrap de forma remota con el link 
+	de la extensión escribiendo bs5-->
+
+    <!--Le he puesto bordes de bootstrap a todos los elementos para que se pueda entender el modelo
+  de rejilla que tiene boostrap-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container border">
+      <header class="row text-align-center border">
+        <div class="col-12 border">
+          <h1>Prueba de rejilla</h1>
+        </div>
+      </header>
+
+      <main>
+        <section id="primera" class="row border">
+          <!-- En un tamaño extra pequeño ocupa 12 columnas, 
+					en un tamaño mediano 6 columnas 
+					y uno extra-largo 4 columnas -->
+          <article class="col-12 col-md-6 col-lg-4 border">
+            <h1>Elementos</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+              repellendus sint ut reiciendis nesciunt aliquam dicta quidem,
+              autem fugiat. Nihil architecto recusandae quasi qui exercitationem
+              assumenda nam ea. Animi, tenetur.
+            </p>
+          </article>
+          <article class="col-12 col-md-6 col-lg-4 border">
+            <h1>Elementos</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+              repellendus sint ut reiciendis nesciunt aliquam dicta quidem,
+              autem fugiat. Nihil architecto recusandae quasi qui exercitationem
+              assumenda nam ea. Animi, tenetur.
+            </p>
+          </article>
+          <article class="col-4 border">
+            <h1>Elementos</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+              repellendus sint ut reiciendis nesciunt aliquam dicta quidem,
+              autem fugiat. Nihil architecto recusandae quasi qui exercitationem
+              assumenda nam ea. Animi, tenetur.
+            </p>
+          </article>
+        </section>
+        <section id="segunda" class="row border">
+          <article class="col-6 border">
+            <h1>Columnas anidadas 1</h1>
+            <div class="row border">
+              <div class="col-4 border">Elemento 1</div>
+              <div class="col-4 border">Elemento 2</div>
+              <div class="col-4 border">Elemento 3</div>
+            </div>
+          </article>
+          <article class="col-6 border">
+            <h1>Columnas anidadas 2</h1>
+            <!-- -cols es de Boot5, permite indicar el número de columnas de una fila-->
+            <div class="row border">
+              <!-- solo funciona con la clase col, que ajusta automáticamente el espacio -->
+              <div class="col-6 border">Elemento 1</div>
+              <div class="col-6 border">Elemento 2</div>
+              <!-- la tercera columna se iría a la siguiente línea-->
+              <div class="col-6 border">Elemento 3</div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
